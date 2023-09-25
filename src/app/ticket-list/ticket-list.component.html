@@ -1,0 +1,24 @@
+<div class="ticket-list">
+    <h2>Ticket List</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>Assigned Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ticket of tickets">
+          <td>{{ ticket.id }}</td>
+          <td>{{ ticket.title }}</td>
+          <td>{{ ticket.description }}</td>
+          <td>{{ ticket.status }}</td>
+          <td>{{ ticket.assignedDate | date }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
